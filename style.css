@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --darkBlue: hsl(233, 26%, 24%);
+    --limeGreen: hsl(136, 65%, 51%);
+    --brightCyan: hsl(192, 70%, 51%);
+    --grayishBlue: hsl(233, 8%, 62%);
+    --lightGrayishBlue: hsl(220, 16%, 96%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    position: relative;
+    overflow-x:hidden ;
+    width: 100vw;
+    font-family: 'Public Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    background-color: white;
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+
+
+}
+.nav li{
+    display: inline-block;
+}
+.nav li a{
+margin-left: 20px;
+position: relative;
+color: var(--grayishBlue);
+}
+.nav li a:hover{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35%;
+    width: 0;
+    height: 4px;
+    background: var(--grayishBlue);
+    transition: all .5s;
+
+}
+.nav li a:hover::after{
+    width: 100%;
+}
+.drop-down{
+    display: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+span,p{
+    color: var(--grayishBlue);
+}
+.details{
+    background-color: var(--veryLightGray);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow-x: hidden;
+    position: relative;
+}
+.brif{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    transform: translate(40%,-40%);
+}
+.request_ivite{
+    display: grid;
+    outline: none;
+    border: none;
+    all: unset;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    margin: 20px 0px;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.brif h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.mockup{
+background: url(images/bg-intro-desktop.svg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position-x: 50px;
+background-position-y: -80px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.mockup-img{
+    width: 85%;
+    transform: translate(140px,-50px);
+}
