@@ -125,7 +125,8 @@ align-items: center;
 }
 .reason{
     background-color: var(--lightGrayishBlue);
-    margin: 20px 0;
+    margin:0;
+    padding:20px 20px ;
 }
 .benefit{
     position:relative;
@@ -146,6 +147,10 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     gap: 1.5em;
+}
+.why_list{
+    text-align: center;
+    padding:40px 20px ;
 }
 .why_list > div img{
     padding: 10px 0;
@@ -176,4 +181,66 @@ align-items: center;
     width: 100%;
     height: 200px;
     padding-bottom: 15px;
+}
+.thumnail img{
+   object-fit: cover;
+}
+.articals-card .postedBy{
+ margin: 0px 0;
+}
+.articals-card .title-card{
+    font-size: 20px;
+    padding: 10px 0;
+   
+}
+
+.card_body {
+    
+   padding-bottom: 30px;
+}
+footer{
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    
+}
+footer ul {
+    list-style: none;
+    
+}
+.social-link {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.social-link .logo{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.social-link-list li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-ft1 li , .nav-ft2 li {
+    margin: 10px 0;
+}
+.nav-ft1 li a, .nav-ft2 li a{
+    color: var(--lightGrayishBlue);
+    font-size: 20px;
+}
+.nav-ft2 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction:column;
+    
+}
+.nav-ft2 h4{
+    color:var(--grayishBlue)
 }
