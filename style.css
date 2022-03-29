@@ -123,3 +123,57 @@ align-items: center;
     width: 85%;
     transform: translate(140px,-50px);
 }
+.reason{
+    background-color: var(--lightGrayishBlue);
+    margin: 20px 0;
+}
+.benefit{
+    position:relative;
+    padding-bottom: 20px;
+    width: 45vw;
+
+}
+.benefit h1{
+    font-size: 40px;
+    margin: 20px 0;
+
+}
+.benefit p{
+    color: var(--grayishBlue);
+
+}
+.why_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+.why_list > div img{
+    padding: 10px 0;
+}
+
+.why_list > div h2 {
+    padding: 15px 0;
+}
+.latelest-articLs{
+    padding: 100px 50px;
+    background-color: var(--veryLightGray);
+}
+.latelest-articLs>h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.articals{
+    display: flex;
+    justify-content: space-between;
+    gap:1em;
+}
+.articals .articals-card{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.thumnail{
+    width: 100%;
+    height: 200px;
+    padding-bottom: 15px;
+}
